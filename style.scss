@@ -1,67 +1,62 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-background-color: white;
+body {
+  background-color: white;
 }
 
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-     //forma de mudarmos o estilo em uma determinada tela, da tela miníma até a maxima "800px"
-    @media (max-width: 800px) {
-        flex-direction: column;
-        
-    }
-   
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  //forma de mudarmos o estilo em uma determinada tela, da tela miníma até a maxima "800px"
+  border: solid;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 }
 
-ul{
-    display: flex;
-    list-style: none; //tirrar a lista 
-    width: 70vw;
-    justify-content: space-around;
-    @media (max-width: 800px) {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-}
-
-main{
-    .banner{
-        width: 100vw;
-        @media (max-width:800px){ //dando limite a existencia do banner 
-            display: none; //retirando o display do banner 
-            
-        }
-    }
-}
-
-section{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    //não esta presente.
-    margin-top: 30px;
-    @media (max-width:800px) {
-        flex-direction: column;
-    }
-}
-
-.caixa-one{
-    width: 30vw;
-    //não esta presente.
-    line-height: 25px; //
+ul {
+  display: flex;
+  list-style: none; //tirar a lista
+  width: 70vw;
+  justify-content: space-around;
+  @media (max-width: 800px) {
+    flex-direction: column;
     text-align: center;
-    @media (max-width:800px) {
-        width: 55vw;
-        text-align: center;
-        margin-top: 30px;
-        
-    }
+  }
+}
+
+.banner {
+  width: 100%;
+  @media (max-width: 800px) {
+    //dando limite a existencia do banner
+    display: none; //retirando o display do banner
+  }
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  //não esta presente.
+  margin-top: 30px;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+
+.caixa-one {
+  width: 30vw;
+  //não esta presente.
+  line-height: 25px;
+  text-align: center;
+  @media (max-width: 800px) {
+    width: 55vw;
+    text-align: center;
+    margin-top: 30px;
+  }
 }
