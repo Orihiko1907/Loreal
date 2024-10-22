@@ -6,13 +6,18 @@
 
 body {
   background-color: white;
+  font-family: "Kodchasan", sans-serif;
 }
 
 header {
+  margin: 0 2% 0 2%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: solid;
+  height: 12vh;
+}
+header img {
+  width: 8vw;
 }
 @media (max-width: 800px) {
   header {
@@ -24,7 +29,10 @@ ul {
   display: flex;
   list-style: none;
   width: 70vw;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+ul li {
+  font-size: 14px;
 }
 @media (max-width: 800px) {
   ul {
@@ -59,10 +67,26 @@ section {
   line-height: 25px;
   text-align: center;
 }
+.caixa-one h2 {
+  margin-bottom: 5px;
+}
 @media (max-width: 800px) {
   .caixa-one {
-    width: 55vw;
+    width: 90%;
     text-align: center;
     margin-top: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .produtos figure {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .produtos figure img {
+    width: 25%;
+    margin: 20px;
   }
 }/*# sourceMappingURL=style.css.map */

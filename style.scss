@@ -6,14 +6,19 @@
 
 body {
   background-color: white;
+  font-family: "Kodchasan", sans-serif;
 }
 
 header {
+  margin: 0 2% 0 2%; //margin pode recebr quatro parametros primeiro parametro cima = 0 segundo parametro
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 12vh;
+  img {
+    width: 8vw;
+  }
   //forma de mudarmos o estilo em uma determinada tela, da tela miníma até a maxima "800px"
-  border: solid;
   @media (max-width: 800px) {
     flex-direction: column;
   }
@@ -23,7 +28,11 @@ ul {
   display: flex;
   list-style: none; //tirar a lista
   width: 70vw;
-  justify-content: space-around;
+  justify-content: space-between;
+  li {
+    font-size: 14px;
+  }
+
   @media (max-width: 800px) {
     flex-direction: column;
     text-align: center;
@@ -54,9 +63,29 @@ section {
   //não esta presente.
   line-height: 25px;
   text-align: center;
+
+  h2 {
+    margin-bottom: 5px;
+  }
+
   @media (max-width: 800px) {
-    width: 55vw;
+    width: 90%;
     text-align: center;
     margin-top: 30px;
+  }
+}
+
+.produtos {
+  figure {
+    @media (max-width: 800px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 25%;
+        margin: 20px;
+      }
+    }
   }
 }
